@@ -21,3 +21,7 @@ var cloud = cloud.fontcolor("grey");
 var mix = mix.fontcolor("red");
 document.write(weather);
 document.write(mix);
+
+document.write("<br><br>");
+
+document.write(15-5);
