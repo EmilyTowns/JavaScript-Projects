@@ -11,3 +11,7 @@ document.write("<br><br>\"If life were predictable" + " it would cease to be lif
 
 var text = "<br><br>This text is" + " concatenated," + " although you can\'t really tell.";
 document.write(text);
+
+var weather = "<br><br>Today, the weather is ", rain = "rainy.", sun = "sunny.", cloud = "cloudy.", mix = "a mix of sun and cloud.";
+document.write(weather);
+document.write(sun);
