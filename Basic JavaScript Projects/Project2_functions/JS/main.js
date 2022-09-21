@@ -9,3 +9,9 @@ function Mouse_Over_Function() {
     var result = str.fontcolor("blue");
     document.getElementById("Paragraph") .innerHTML = result;
 }
+
+function doubleClickFunction() {
+    var sentence = "This sentence is ";
+    sentence += "concatenated!";
+    document.getElementById("secondParagraph") .innerHTML = sentence;
+}
