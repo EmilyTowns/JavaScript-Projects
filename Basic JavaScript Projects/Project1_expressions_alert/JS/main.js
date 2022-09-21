@@ -25,3 +25,15 @@ document.write(mix);   //Displays string assigned to variable "mix"
 document.write("<br><br>");   //Creates a space between lines of text
 
 document.write(15-5);   //Displays the result of an expression that is written within a statement
+
+document.write("<br><br>");   //Creates a space between lines
+
+function bigImg(x) {   //JS event to make picture larger on mouseover
+    x.style.height = "250px";
+    x.style.width = "250px";
+  }
+  
+  function normalImg(x) {   //JS event to make picture back to original size on mouse out
+    x.style.height = "200px";
+    x.style.width = "200px";
+  }
