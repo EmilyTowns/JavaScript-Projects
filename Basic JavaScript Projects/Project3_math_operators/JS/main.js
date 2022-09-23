@@ -12,3 +12,8 @@ function division() {
     var div = 90/3;
     document.getElementById("divide").innerHTML="90 divided by 3 equals "+div;
 }
+
+function multiMath() {
+    var math = ((2*10)+50)/7-2;
+    document.getElementById("multi").innerHTML="2 times 10, plus 50, divided by 7, minus 2 equals "+math;
+}
