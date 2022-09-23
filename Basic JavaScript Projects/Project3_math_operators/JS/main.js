@@ -22,3 +22,8 @@ function modulusMath() {
     var modu = 20%3;
     document.getElementById("mod").innerHTML="The remainder of 20 divided by 3 is "+modu;
 }
+
+function negationMath() {
+    var neg = 65;
+    document.getElementById("negation").innerHTML="The negative form of 65 is "+-neg;
+}
