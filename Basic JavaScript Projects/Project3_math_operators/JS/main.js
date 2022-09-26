@@ -39,3 +39,8 @@ function decrementMath() {
     dec--;
     document.getElementById("decrement").innerHTML="20 decremented by 1 is "+dec;
 }
+
+function randomMath() {
+    var ran = Math.random() * 50;
+    document.getElementById("random").innerHTML="The random number is "+ran;
+}
