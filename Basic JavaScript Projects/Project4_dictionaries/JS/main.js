@@ -6,5 +6,6 @@ function dictionary() {
         EyeColour:"brown",
         HairColour:"light brown"
     };
+    delete Family.HairColour;
     document.getElementById("Dictionary").innerHTML=Family.Name+"'s hair colour is "+Family.HairColour;
 }
