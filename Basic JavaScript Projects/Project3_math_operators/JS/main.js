@@ -44,3 +44,8 @@ function randomMath() {
     var ran = Math.random() * 50;
     document.getElementById("random").innerHTML="The random number is "+ran;
 }
+
+function roundUp() {
+    var up = Math.ceil(1.2345);
+    document.getElementById("round").innerHTML="1.2345 rounded up is "+up;
+}
