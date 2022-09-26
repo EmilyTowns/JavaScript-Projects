@@ -27,3 +27,15 @@ function negationMath() {
     var neg = 65;
     document.getElementById("negation").innerHTML="The negative form of 65 is "+-neg;
 }
+
+function incrementMath() {
+    var inc = 15;
+    inc++;
+    document.getElementById("increment").innerHTML="15 incremented by 1 is "+inc;
+}
+
+function decrementMath() {
+    var dec = 20;
+    dec--;
+    document.getElementById("decrement").innerHTML="20 decremented by 1 is "+dec;
+}
