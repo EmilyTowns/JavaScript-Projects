@@ -33,3 +33,17 @@ function negativeInfinityNumber() {
         "\"-3E310\" is considered " +
         x;
 }
+
+function booleanLogicTrue() {
+    var x = 16<17;
+    document.getElementById("booleanTrue").innerHTML=
+        "16 is less than 17: " +
+        x;
+}
+
+function booleanLogicFalse() {
+    var x = 16>17;
+    document.getElementById("booleanFalse").innerHTML=
+        "16 is greater than 17: " +
+        x;
+}
