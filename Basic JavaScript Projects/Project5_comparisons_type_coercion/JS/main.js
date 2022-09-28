@@ -47,3 +47,5 @@ function booleanLogicFalse() {
         "16 is greater than 17: " +
         x;
 }
+
+console.log(53*20);
