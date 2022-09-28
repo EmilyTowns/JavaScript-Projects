@@ -72,3 +72,31 @@ function doubleEqualFalse() {
         "10 plus 6, is equal to 20: " +
         x;
 }
+
+function tripleEqualTrue() {
+    var x = 6===6;
+    document.getElementById("tripleTrue").innerHTML=
+        "6 is equal to 6 in both data type and value: " +
+        x;
+}
+
+function tripleFalseValueType() {
+    var x = 14==="15";
+    document.getElementById("tripleValueType").innerHTML=
+        "14 is equal to \"15\" in both data type and value: " +
+        x;
+}
+
+function tripleFalseType() {
+    var x = 17==="17";
+    document.getElementById("tripleType").innerHTML=
+        "17 is equal to \"17\" in both data type and value: " +
+        x;
+}
+
+function tripleFalseValue() {
+    var x = 8===9;
+    document.getElementById("tripleValue").innerHTML=
+        "8 is equal to 9 in both data type and value: " +
+        x;
+}
