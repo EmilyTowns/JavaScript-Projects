@@ -55,4 +55,6 @@ function typeCoercion() {
     document.getElementById("coercion").innerHTML=
         "To make the number 256, we can type \"2\" as a string and 56 as a number: " +
         x;
-    }
+}
+
+console.log(25>26);
