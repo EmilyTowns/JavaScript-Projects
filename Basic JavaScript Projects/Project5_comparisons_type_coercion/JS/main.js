@@ -100,3 +100,31 @@ function tripleFalseValue() {
         "8 is equal to 9 in both data type and value: " +
         x;
 }
+
+function ANDTrue() {
+    var x = 60>40 && 10<13;
+    document.getElementById("ATrue").innerHTML=
+        "60 is greater than 40 AND 10 is less than 13: " +
+        x;
+}
+
+function ANDFalse() {
+    var x = 10>12 && 16<18;
+    document.getElementById("AFalse").innerHTML=
+        "10 is greater than 12 AND 16 is less than 18: " +
+        x;
+}
+
+function ORTrue() {
+    var x = 2>1 || 9<8;
+    document.getElementById("OTrue").innerHTML=
+        "2 is greater than 1 OR 9 is less than 8: " +
+        x;
+}
+
+function ORFalse() {
+    var x = 70>80 || 21<19;
+    document.getElementById("OFalse").innerHTML=
+        "70 is greater than 80 OR 21 is less than 19: " +
+        x;
+}
