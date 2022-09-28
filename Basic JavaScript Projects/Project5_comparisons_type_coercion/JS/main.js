@@ -58,3 +58,17 @@ function typeCoercion() {
 }
 
 console.log(25>26);
+
+function doubleEqualTrue() {
+    var x = (15+5)==20;
+    document.getElementById('doubleTrue').innerHTML=
+        "15 plus 5, is equal to 20: " +
+        x;
+}
+
+function doubleEqualFalse() {
+    var x = (10+6)==20;
+    document.getElementById('doubleFalse').innerHTML=
+        "10 plus 6, is equal to 20: " +
+        x;
+}
