@@ -49,3 +49,10 @@ function booleanLogicFalse() {
 }
 
 console.log(53*20);
+
+function typeCoercion() {
+    var x = "2" + 56;
+    document.getElementById("coercion").innerHTML=
+        "To make the number 256, we can type \"2\" as a string and 56 as a number: " +
+        x;
+    }
