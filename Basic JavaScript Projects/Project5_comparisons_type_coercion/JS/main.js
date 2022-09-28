@@ -128,3 +128,17 @@ function ORFalse() {
         "70 is greater than 80 OR 21 is less than 19: " +
         x;
 }
+
+function NOTTrue() {
+    var x = !(3>7);
+    document.getElementById("NTrue").innerHTML=
+        "3 is not greater than 7: " +
+        x;
+}
+
+function NOTFalse() {
+    var x = !(90>62);
+    document.getElementById("NFalse").innerHTML=
+        "90 is not greater than 62: " +
+        x;
+}
