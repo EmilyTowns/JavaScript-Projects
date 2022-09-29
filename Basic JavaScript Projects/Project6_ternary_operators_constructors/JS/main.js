@@ -20,3 +20,13 @@ function newFunction() {
     "The Flamer is a " + Flamer.Ride_Type + " type ride. It is a " + Flamer.Ride_Speed +
     " speed ride, appropriate for ages " + Flamer.Ride_Age + " and up.";
 }
+
+function ticketsFunction() {
+    document.getElementById("Nested_Function").innerHTML=Count();
+    function Count() {
+        var Starting_point=50;
+        function Minus_one() {Starting_point -= 1;}
+        Minus_one();
+        return Starting_point;
+    }
+}
