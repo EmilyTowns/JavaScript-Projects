@@ -22,3 +22,9 @@ function localAdd() {
     "The same variable plus 10 is " + add;
     console.log(Y + 10);
 }
+
+function get_Hours() {
+    if (new Date().getHours()<13) {
+        document.getElementById("Hours").innerHTML= "It is before 1pm.";
+    }
+}
