@@ -38,3 +38,15 @@ function precisionFunction() {
     document.getElementById("precision").innerHTML=
     "56.915845 redcued to 5 digits is " + X.toPrecision(5);
 }
+
+function fixedFunction() {
+    var X = 6.9467;
+    document.getElementById("fixed").innerHTML=
+    "6.9467 in a string, reduced to one decimal place is " + X.toFixed(1);
+}
+
+function valueFunction() {
+    var X = "A word";
+    document.getElementById("valueOf").innerHTML=
+    "Using the valueOf() method, \"A word\" is " + X.valueOf();
+}
