@@ -35,3 +35,14 @@ function IFStatement() {
         "90 is greater than 76.";
     }
 }
+
+function getAgeFunction() {
+    Age=document.getElementById("userAge").value;
+    if (Age <= 17) {
+        Heart = "You are young.";
+    }
+    else {
+        Heart = "You are young at heart!";
+    }
+    document.getElementById("yourAge").innerHTML = Heart;
+}
