@@ -32,3 +32,9 @@ function stringFunction() {
     document.getElementById("string").innerHTML=
     "The number 94, as a string, is " + X.toString();
 }
+
+function precisionFunction() {
+    var X = 56.915845;
+    document.getElementById("precision").innerHTML=
+    "56.915845 redcued to 5 digits is " + X.toPrecision(5);
+}
