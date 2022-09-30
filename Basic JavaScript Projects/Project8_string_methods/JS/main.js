@@ -26,3 +26,9 @@ function searchFunction() {
     "In the sentence \"Today is a sunny day.\", the word \"sunny\" is in position "
     + Search;
 }
+
+function stringFunction() {
+    var X = 94;
+    document.getElementById("string").innerHTML=
+    "The number 94, as a string, is " + X.toString();
+}
