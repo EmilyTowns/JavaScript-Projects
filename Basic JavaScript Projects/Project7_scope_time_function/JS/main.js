@@ -28,3 +28,10 @@ function get_Hours() {
         document.getElementById("Hours").innerHTML= "It is before 1pm.";
     }
 }
+
+function IFStatement() {
+    if (90>76) {
+        document.getElementById("IF").innerHTML=
+        "90 is greater than 76.";
+    }
+}
