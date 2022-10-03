@@ -17,3 +17,13 @@ function for_Loop() {
     }
     document.getElementById("List_of_Family").innerHTML = X;
 }
+
+function array_Function() {
+    var Tree = [];
+    Tree[0] = "maple";
+    Tree[1] = "pine";
+    Tree[2] = "birch";
+    Tree[3] = "sumac";
+    document.getElementById("Array").innerHTML = 
+    "My favourite tree is a " + Tree[0] + " tree.";
+}
