@@ -67,3 +67,21 @@ function objectFunction() {
     }
     document.getElementById("Object").innerHTML = laptop.description();
 }
+
+function breakFunction() {
+    let text = "";
+    for (let i = 0; i < 20; i++) {
+        if (i === 11) {break;}
+        text += i + "<br>";
+    }
+    document.getElementById("Break").innerHTML = text;
+}
+
+function continueFunction() {
+    let text = "";
+    for (let i = 0; i < 11; i++) {
+        if (i === 5) {continue;}
+        text += i + "<br>";
+    }
+    document.getElementById("Continue").innerHTML = text;
+}
