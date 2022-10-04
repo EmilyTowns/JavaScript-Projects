@@ -36,3 +36,12 @@ function constant_function() {
     document.getElementById("Constant").innerHTML = 
     "The paint we selected for the " + Paint.location + " is the " + Paint.brand + " " + Paint.type + " in the colour " + Paint.colour + ".";
 }
+
+function letFunction() {
+    var X = "This is assigning a variable using var, ";
+    document.getElementById("var").innerHTML = X + nestedFunction();
+    function nestedFunction() {
+        let X = " and this is assigning a variable using let.";
+        return X;
+    }
+}
