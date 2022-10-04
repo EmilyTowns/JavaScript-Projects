@@ -54,3 +54,16 @@ function returnFunction() {
         return X;
     }
 }
+
+function objectFunction() {
+    let laptop = {
+        brand: "Acer ",
+        model: "Aspire 5 ",
+        ram: "24 GB ",
+        memory: "1 TB ",
+        description: function() {
+            return "The laptop is a(n) " + this.brand + this.model +"with " + this.ram + "of RAM and " + this.memory + "of memory.";
+        } 
+    }
+    document.getElementById("Object").innerHTML = laptop.description();
+}
