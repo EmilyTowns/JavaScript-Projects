@@ -45,3 +45,12 @@ function letFunction() {
         return X;
     }
 }
+
+function returnFunction() {
+    var X = "You can use the return statement to ";
+    document.getElementById("return").innerHTML = X + nestedFunction();
+    function nestedFunction() {
+        let X = " stop the execution of a function and return a value.";
+        return X;
+    }
+}
