@@ -27,3 +27,12 @@ function array_Function() {
     document.getElementById("Array").innerHTML = 
     "My favourite tree is a " + Tree[0] + " tree.";
 }
+
+function constant_function() {
+    const Paint = {type:"water-based", colour:"white", location:"bedroom"};
+    Paint.type = "oil-based";
+    Paint.colour = "grey";
+    Paint.brand = "Behr";
+    document.getElementById("Constant").innerHTML = 
+    "The paint we selected for the " + Paint.location + " is the " + Paint.brand + " " + Paint.type + " in the colour " + Paint.colour + ".";
+}
