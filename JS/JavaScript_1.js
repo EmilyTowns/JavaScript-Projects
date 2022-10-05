@@ -26,3 +26,8 @@ function foodFunction() {
     }
     document.getElementById("Output").innerHTML = Food_Output;
 }
+
+function winnerFunction() {
+    var A = document.getElementsByClassName("Class");
+    A[1].innerHTML="The winner is #1!";
+}
