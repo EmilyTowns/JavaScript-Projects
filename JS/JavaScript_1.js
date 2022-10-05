@@ -31,3 +31,15 @@ function winnerFunction() {
     var A = document.getElementsByClassName("Class");
     A[1].innerHTML="The winner is #1!";
 }
+
+function canvasFunction(){
+    var c = document.getElementById("canvasID");   //Declares variable and assigns canvas element from HTML
+    var ctx = c.getContext("2d");   //Declares another variable and defines the drawing context as 2d rendering
+
+    var grd = ctx.createRadialGradient(250,125,20,250,125,230);   //Declares another variable as creating a radial gradient within the ctx context 
+    grd.addColorStop(0,"blue");   //Defines a new color stop, which adds an offset and color
+    grd.addColorStop(1,"green");   //Defines second color stop with a second color
+
+    ctx.fillStyle = grd;   //States that the fill of the canvas should be the radial gradient
+    ctx.fillRect(0,0,500,250);   //Creates a rectangle with x, y, height, and width that will fill according to the fillstyle
+}
