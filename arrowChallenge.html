@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <p id="item"></p>
+
+        <script>
+            let sentence = "";
+
+            sentence = () => {
+                return "This sentence is made using the arrow function.";
+            }
+
+            document.getElementById("item").innerHTML = sentence();
+        </script>
+    </body>
+</html>
