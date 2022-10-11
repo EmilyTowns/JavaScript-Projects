@@ -9,8 +9,8 @@
     </body>
 
     <script>
-        $(document).ready(function() {
-            $("html").append(
+        $(document).ready(function() {   /* targets the whole document and indicates when it is ready, to peform the function */
+            $("html").append(   /* targets html to append the body tag, div tags, and p tags */
                 "<body>\
                     <div id='container'>\
                         <div id='inner'>\
@@ -22,12 +22,12 @@
                     </div>\
                 </body>"
             );
-            $("#2").css({"color":"red"});
-            $("#3").click(function() {
-                $('h1').hide();
+            $("#2").css({"color":"red"});   /* targets the p with id "2" to have css code changing the text color to red */
+            $("#3").click(function() {   /* targets the p with id "3" to to have the function start on click */
+                $('h1').hide();   /* targets the header and hides it when paragraph 3 is clicked */
             });
-            $("#1").on("click", function() {
-                $("p").hide(1000);
+            $("#1").on("click", function() {   /* targets p 1 and has the function happen on click */
+                $("p").hide(1000);   /* targets the paragraphs to hide slowly over 1 second */
             });
         });
     </script>
