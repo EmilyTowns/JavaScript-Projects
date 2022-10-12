@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function validateForm() {
+                let x = document.forms["myForm"]["fname"].value;
+                if (x == "") {
+                    alert("First name must be completed");
+                    return false;
+                }
+                let y = document.forms["myForm"]["lname"].value;
+                if (y == "") {
+                    alert("Last name must be completed");
+                    return false;
+                }
+                let z = document.forms["myForm"]["phone"].value;
+                if (z == "") {
+                    alert("Phone number must be completed");
+                    return false;
+                }
+                let a = document.forms["myForm"]["email"].value;
+                if (a == "") {
+                    alert("Email must be completed");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h3>Please enter your information to submit:</h3>
+        <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="phone">Phone number:</label><br>
+            <input type="text" id="phone" name="phone"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
