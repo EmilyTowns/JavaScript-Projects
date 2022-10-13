@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>GreenLight Homes</title>
+		<link rel="stylesheet" href="./CSS/Challenge_36.css">
+		<script src="./JS/Challenge_36.js" defer></script>
+	</head>
+	<body>
+	
+		<!-- NAV -->
+		<nav>
+			<a href="#home" id="link">HOME</a>
+			<a href="#models">MODELS GALLERY</a>
+			<a href="#tours">HOME TOURS</a>
+			<a href="#contact">CONTACT</a>
+		</nav>
+		<!-- END NAV -->
+		
+		<!-- HOME -->
+		<div id="home">
+			<h1>GreenLight Homes</h1>
+		</div>
+		<!-- END HOME -->
+		
+		<!-- HOME MODELS -->
+		<!-- Images to open lightbhox -->
+		<h2 id="models">Available Home Models</h2>
+		<div class="row">
+			<div class="column">
+				<img src="./Images/Thumb/Thumb_1.jpg" onclick="openModal();currentSlide(1)" class="hover=shadow">
+			</div>
+			<div class="column">
+				<img src="./Images/Thumb/Thumb_2.jpg" onclick="openModal();currentSlide(2)" class="hover=shadow">
+			</div>
+			<div class="column">
+				<img src="./Images/Thumb/Thumb_3.jpg" onclick="openModal();currentSlide(3)" class="hover=shadow">
+			</div>
+			<div class="column">
+				<img src="./Images/Thumb/Thumb_4.jpg" onclick="openModal();currentSlide(4)" class="hover=shadow">
+			</div>
+		</div>
+
+		<!-- Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="./Images/Thumb/Thumb_1.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="./Images/Thumb/Thumb_2.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="./Images/Thumb/Thumb_3.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="./Images/Thumb/Thumb_4.jpg" style="width:100%">
+				</div>
+
+
+				<!-- Next/Prev Controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!-- Caption Text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+			</div>
+
+				<!-- Thumbnail Image Controls -->
+			<div class="modal-thumb"> 	
+				<div class="column">
+					<img class="demo" src="./Images/Thumb/Thumb_1_1.jpg" onclick="currentSlide(1)" alt="Home Model 1">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Images/Thumb/Thumb_2_2.jpg" onclick="currentSlide(2)" alt="Home Model 2">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Images/Thumb/Thumb_3_3.jpg" onclick="currentSlide(3)" alt="Home Model 3">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Images/Thumb/Thumb_4_4.jpg" onclick="currentSlide(4)" alt="Home Model 4">
+				</div>
+			</div>
+		</div>
+		
+		<!-- Videos -->
+		<div class="videoContainer" id="tours">
+			<h2>Home Model Tours</h2>
+
+			<div class="video">
+				<h4>Model 1</h4>
+				<iframe width="1148" height="646" src="https://www.youtube.com/embed/eqYPM96mi2U" title="Architectural Designs Modern Farmhouse Plan 62155V Virtual Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
+			<div class="video">
+				<h4>Model 3</h4>
+				<iframe width="1148" height="646" src="https://www.youtube.com/embed/IsQlMdutwhQ" title="Architectural Designs House Plan 62148V Virtual Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
+			<div class="video">
+				<h4>Model 4</h4>
+				<iframe width="1148" height="646" src="https://www.youtube.com/embed/yNB2hFFMajY" title="Architectural Designs Modern Farmhouse Plan 16901WG Virtual Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
+		</div>
+			
+		<!-- END HOME MODELS -->
+	
+		<!-- CONTACT -->
+		<section>
+			<div id="contact">
+			<h2>Contact Us</h2>
+				<h3><span>Fill in the form below to contact us for further information on our homes.</span></h3>
+	
+				<div>
+					<form action="" method="post">
+						First name: <input type="text" name="First_Name"><br>
+						Last Name: <input type="text" name="Last_Name"><br>
+						Email: <input type="email" name="Email"><br>
+						Phone Number: <input type="phone" name="Phone"><br>
+						Tell us a bit about your inquiry:<br> <input type="text" name="Other"><br>
+						<input type="submit" value="Submit">							
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- END CONTACT -->
+
+         <!-- Sticky contact-->
+        <div class="sticky">
+            <button class="stickyButton" onclick="openForm()">Contact Now</button>
+        </div>
+        <!-- /Sticky contact-->
+
+        <!-- Sticky form -->
+        <div class="form-popup" id="myForm">
+            <form action="" method="post" class="form-container">
+                <h1>Contact Us</h1>
+                <label for="First_Name"><b>First name:</b></label>
+                <input type="text" name="First_Name"><br>
+                <label for="Last_Name"><b>Last Name:</b></label>
+                <input type="text" name="Last_Name"><br>
+                <label for="Email"><b>Email:</b></label>
+                <input type="text" name="Email"><br>
+                <label for="Phone"><b>Phone Number:</b></label>
+                <input type="text" name="Phone"><br>
+                <input type="submit" value="Submit" class="btn">
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>							
+            </form>
+        </div>
+        <!-- /Sticky form -->
+
+		<!-- FOOTER -->
+		<div class="footer">
+			<footer>www.GreenLightHomes.com &nbsp;|&nbsp; &copy; 2022</footer>
+		</div>
+		<!-- END FOOTER -->
+	
+	</body>
+</html>
